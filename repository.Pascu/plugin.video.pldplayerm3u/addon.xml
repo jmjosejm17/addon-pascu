@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addon id="plugin.video.pldplayerm3u" version="2.2.4" name="[COLOR blue]PLD-PLAYER.[COLOR lime]M3U[/COLOR]" provider-name="[COLOR blue]Proyectoluzdigital[/COLOR]">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.video.F4mProxy" version="2.2.3"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>[COLOR lime]PLD-PLAYER.M3U [/COLOR]Muchas Gracias Al Creador Del Addons [COLOR red]SHANI [/COLOR] Esto Es Solo Una Modificación)</summary>
+    <description lang="es">[COLOR blue] Reproductor.proyectoluzdigital[COLOR lime] M3U[/COLOR] ofrecido para usted si tiene comentarios o sugerencias para este complemente, no dude en participar en el foro http://proyectoluzdigital.info/[CR]Plugin Modificado Por EL GRUPO PLD</description>
+   <description>
+       .
+	   Disfruten de este contenido totalmente gratis.
+        
+    </description>
+    <platform>all</platform>
+  </extension>
+</addon>
