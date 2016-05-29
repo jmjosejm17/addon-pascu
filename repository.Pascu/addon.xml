@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<addon id="repository.Pascu" name="Pascu repo" version="0.0.1" provider-name="Pascu">
+	<extension point="xbmc.addon.repository" name="Pascu official Repo">
+		<info compressed="false">https://raw.githubusercontent.com/pascu120/addon-pascu/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/pascu120/addon-pascu/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://raw.githubusercontent.com/pascu120/addon-pascu/master</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Pascu official Repo</summary>
+   		<description lang="en">Instala los Addons de Pascu.</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
