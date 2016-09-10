@@ -24,33 +24,6 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.Catoal"
-       name="Catoal[COLOR blue] 5[/COLOR].[COLOR yellow]3[/COLOR].[COLOR red]3[/COLOR]"
-       version="5.3.3"
-       provider-name="Catoal">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" optional="true" />
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" />
-    <import addon="script.module.livestreamer" optional="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>basado en livestreamspro</summary>
-    <description>Catoal</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
 <addon id="plugin.video.f4mTester" version="2.2.4" name="f4mTester" provider-name="Shani">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -66,7 +39,28 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.pascu4" name="[COLOR purple]Pascu[/COLOR]" version="0.0.5" provider-name="Pascu120">
+<addon id="plugin.video.laliga" name="La Liga" version="0.0.9" provider-name="Topo">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.beautifulsoup" version="3.2.1"/>
+		<import addon="script.module.requests"  />
+	    	<import addon="script.module.addon.common" />
+		<import addon="script.module.urlresolver" />
+		<import addon="script.module.liveresolver"  />
+		<import addon="script.module.livestreamer" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Liga Española: La mejor liga del mundo</summary>
+		<description lang="en">Liga Española</description>
+		<disclaimer lang="en">El autor no almacena ni distribuye ninguno de los contenidos que se muestran en este addon. El autor no tiene ninguna afiliación con el proveedor de contenidos.</disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="plugin.video.pascu4" name="[COLOR purple]pascu[/COLOR]" version="0.0.6" provider-name="PASCU120">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="plugin.video.youtube" optional="true"/>
@@ -94,36 +88,31 @@
         <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-  <summary lang="en">[COLOR blue]Pascu[/COLOR]</summary>
-    <description lang="en">[COLOR red][B][COLOR blue]Pascu[/COLOR][/B][/COLOR] ESTE ADDON ES SOLO UNA MODIFICACION DE PALCO TV TODOS LOS MERITO SON PARA SU CREADOR Juarrox AL CUAL AGRADECEMOS TODO SU ESFUERZO EN CREAR PALCO TV </description>
+  <summary lang="en">[COLOR blue]PASCU[/COLOR]</summary>
+    <description lang="en">[COLOR red][B][COLOR blue]PASCU[/COLOR][/B][/COLOR] ESTE ADDON ES SOLO UNA MODIFICACION DE PALCO TV TODOS LOS MERITO SON PARA SU CREADOR Juarrox AL CUAL AGRADECEMOS TODO SU EFUERZO EN CREAR PALCO TV </description>
     <disclaimer lang="en">[B]Queda prohibida la distribución de este addon junto con contenidos multimedia protegidos por derechos de autor.[/B] La vulneración de esta prohibición exonerará de culpa a su autor siendo el único responsable quien lo haya distribuido ilegalmente.</disclaimer>
     <platform>all</platform>
-	<website>http://pascu120.tk</website>
-    <source>https://raw.githubusercontent.com/pascu120/addon-pascu/master/repository.Pascu/</source>
+	<website></website>
+    <source></source>
   </extension>
 </addon>
 
+<addon id="plugin.video.pldplayerm3u" version="2.2.4" name="[COLOR blue]PLD-PLAYER.[COLOR lime]M3U[/COLOR]" provider-name="[COLOR blue]Proyectoluzdigital[/COLOR]">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.video.F4mProxy" version="2.2.3"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>[COLOR lime]PLD-PLAYER.M3U [/COLOR]Muchas Gracias Al Creador Del Addons [COLOR red]SHANI [/COLOR] Esto Es Solo Una Modificación)</summary>
+    <description lang="es">[COLOR blue] Reproductor.proyectoluzdigital[COLOR lime] M3U[/COLOR] ofrecido para usted si tiene comentarios o sugerencias para este complemente, no dude en participar en el foro http://proyectoluzdigital.info/[CR]Plugin Modificado Por EL GRUPO PLD</description>
+   <description>
+       .
+	   Disfruten de este contenido totalmente gratis.
 
-<addon
-  id="plugin.video.SportsDevil"
-  version="[COLOR blue]2.0.3.9[/COLOR]"
-  name="[COLOR blue]SportsDevil.ByPld[/COLOR]"
-  provider-name="[COLOR lime]MaxMustermann, Al101, Hubbab3, Sattekop,Grupo Pld[/COLOR]">
-  <requires>
-   <import addon="xbmc.python" version="2.14.0"/>
-   <import addon="script.module.requests" />
-   <import addon="script.module.livestreamer" />
-   <import addon="script.module.pydevd" optional="true"/>
-  </requires>
-  <extension
-    point="xbmc.python.pluginsource"
-    library="default.py">
-   <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>[COLOR lime]EL GRUPO Y COLABORADORES DE[/COLOR] [COLOR blue]PLD[/COLOR]</summary>
-    <description>[COLOR lime]ESTE PLUGIN A SIDO ACTUALIZADO POR EL GRUPO Y COLABORADORES DE[/COLOR] [COLOR blue]PLD[/COLOR]</description>
-	<description>[COLOR lime]FECHA ACTUALIZACION 16-5-2016[/COLOR]</description>
+    </description>
     <platform>all</platform>
   </extension>
 </addon>
@@ -164,24 +153,4 @@
     <description lang="en">Use this addon to play F4m v1 and v2 streams</description>
   </extension>
 </addon>
-<addon id="plugin.video.pldplayerm3u" version="2.2.4" name="[COLOR blue]PLD-PLAYER.[COLOR lime]M3U[/COLOR]" provider-name="[COLOR blue]Proyectoluzdigital[/COLOR]">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.video.F4mProxy" version="2.2.3"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>[COLOR lime]PLD-PLAYER.M3U [/COLOR]Muchas Gracias Al Creador Del Addons [COLOR red]SHANI [/COLOR] Esto Es Solo Una Modificación)</summary>
-    <description lang="es">[COLOR blue] Reproductor.proyectoluzdigital[COLOR lime] M3U[/COLOR] ofrecido para usted si tiene comentarios o sugerencias para este complemente, no dude en participar en el foro http://proyectoluzdigital.info/[CR]Plugin Modificado Por EL GRUPO PLD</description>
-   <description>
-       .
-	   Disfruten de este contenido totalmente gratis.
-
-    </description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
 </addons>
