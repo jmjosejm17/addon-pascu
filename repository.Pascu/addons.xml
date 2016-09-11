@@ -1,56 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="PLD-Plexus"
-       name="[COLOR red]PLD-ACESTREAM[/COLOR]"
-       version="[COLOR lime]1.3.0[/COLOR]"
-       provider-name="[COLOR blue]GRUPO PLD[/COLOR]">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.requests" />
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>SopCast and AceStream for Kodi</summary>
-    <description lang="en">[COLOR red]PLD-ACESTREAM[/COLOR][COLOR lime] - Any complex structure containing an intricate network of parts. Plexus brings native peer-to-peer support (AceStream and SopCast) for Kodi Entertainment Center for several platforms.[CR][CR]Documentation: (missing)[/COLOR]</description>
-    <description lang="pt">[COLOR red]PLD-ACESTREAM[/COLOR][COLOR lime] - Uma estrutura complexa constituída por uma rede de partes. O Plexus adiciona suporte peer-to-peer nativo (AceStream e Sopcast) ao Kodi Entertainment Center para várias plataformas.[CR][CR]Documentação: (em falta)[/COLOR]</description>
-    <disclaimer lang="en">The author does not host nor distribute any of the content you may watch using this addon. The author has no part in the development of any included technologies. When seeking help in Kodi's forum please respect rules (http://kodi.wiki/view/Forum_rules).</disclaimer>
-    <disclaimer lang="pt">Os autores não alojam nem distribuem nenhum do conteúdo que poderá ser reproduzido a partir deste addon. Os autores não têm qualquer parte no desenvolvimento de qualquer uma das tecnologias. Se procurar ajuda no fórum oficial do Kodi por favor respeite as regras do fórum (http://kodi.wiki/view/Forum_rules).</disclaimer>
-    <forum>http://forum.kodi.tv/showthread.php?tid=201894</forum>
-    <website>https://code.google.com/p/p2p-strm/</website>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.video.Catoal"
-       name="Catoal[COLOR blue] 5[/COLOR].[COLOR yellow]3[/COLOR].[COLOR red]3[/COLOR]"
-       version="5.3.3"
-       provider-name="Catoal">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" optional="true" />
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" />
-    <import addon="script.module.livestreamer" optional="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>basado en livestreamspro</summary>
-    <description>Catoal</description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
 <addon id="plugin.video.f4mTester" version="2.2.4" name="f4mTester" provider-name="Shani">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -66,7 +15,28 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.pascu4" name="[COLOR purple]Pascu[/COLOR]" version="0.0.5" provider-name="Pascu120">
+<addon id="plugin.video.laliga" name="La Liga" version="0.1.0" provider-name="Topo">
+	<requires>
+		<import addon="xbmc.python" version="2.1.0"/>
+		<import addon="script.module.beautifulsoup" version="3.2.1"/>
+		<import addon="script.module.requests"  />
+    	<import addon="script.module.addon.common" />
+		<import addon="script.module.urlresolver" />
+		<import addon="script.module.liveresolver"  />
+		<import addon="script.module.livestreamer" />
+	</requires>
+	<extension point="xbmc.python.pluginsource" library="default.py">
+		<provides>video</provides>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary lang="en">Liga Española: La mejor liga del mundo</summary>
+		<description lang="en">Liga Española</description>
+		<disclaimer lang="en">El autor no almacena ni distribuye ninguno de los contenidos que se muestran en este addon. El autor no tiene ninguna afiliación con el proveedor de contenidos.</disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="plugin.video.pascu4" name="[COLOR purple]Pascu[/COLOR]" version="0.0.7" provider-name="Pascu120">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="plugin.video.youtube" optional="true"/>
@@ -95,14 +65,33 @@
   </extension>
   <extension point="xbmc.addon.metadata">
   <summary lang="en">[COLOR blue]Pascu[/COLOR]</summary>
-    <description lang="en">[COLOR red][B][COLOR blue]Pascu[/COLOR][/B][/COLOR] ESTE ADDON ES SOLO UNA MODIFICACION DE PALCO TV TODOS LOS MERITO SON PARA SU CREADOR Juarrox AL CUAL AGRADECEMOS TODO SU ESFUERZO EN CREAR PALCO TV </description>
+    <description lang="en">[COLOR red][B][COLOR blue]Pascu[/COLOR][/B][/COLOR] ESTE ADDON ES SOLO UNA MODIFICACION DE PALCO TV TODOS LOS MERITO SON PARA SU CREADOR  AL CUAL AGRADECEMOS TODO SU EFUERZO EN CREAR PALCO TV </description>
     <disclaimer lang="en">[B]Queda prohibida la distribución de este addon junto con contenidos multimedia protegidos por derechos de autor.[/B] La vulneración de esta prohibición exonerará de culpa a su autor siendo el único responsable quien lo haya distribuido ilegalmente.</disclaimer>
     <platform>all</platform>
 	<website>http://pascu120.tk</website>
-    <source>https://raw.githubusercontent.com/pascu120/addon-pascu/master/repository.Pascu/</source>
+    <source></source>
   </extension>
 </addon>
 
+<addon id="plugin.video.pldplayerm3u" version="2.2.4" name="[COLOR blue]PLD-PLAYER.[COLOR lime]M3U[/COLOR]" provider-name="[COLOR blue]Proyectoluzdigital[/COLOR]">
+    <requires>
+        <import addon="xbmc.python" version="2.1.0"/>
+        <import addon="script.video.F4mProxy" version="2.2.3"/>
+    </requires>
+    <extension point="xbmc.python.pluginsource" library="default.py">
+        <provides>video</provides>
+    </extension>
+    <extension point="xbmc.addon.metadata">
+        <summary>[COLOR lime]PLD-PLAYER.M3U [/COLOR]Muchas Gracias Al Creador Del Addons [COLOR red]SHANI [/COLOR] Esto Es Solo Una Modificación)</summary>
+    <description lang="es">[COLOR blue] Reproductor.proyectoluzdigital[COLOR lime] M3U[/COLOR] ofrecido para usted si tiene comentarios o sugerencias para este complemente, no dude en participar en el foro http://proyectoluzdigital.info/[CR]Plugin Modificado Por EL GRUPO PLD</description>
+   <description>
+       .
+	   Disfruten de este contenido totalmente gratis.
+
+    </description>
+    <platform>all</platform>
+  </extension>
+</addon>
 
 <addon
   id="plugin.video.SportsDevil"
@@ -128,6 +117,160 @@
   </extension>
 </addon>
 
+<addon id="repository.BassFox-Official" name="BassFox Official Repository" version="1.3.0" provider-name="BassFox">
+	<extension point="xbmc.addon.repository" name="BassFox official Repo">
+		<info compressed="false">https://raw.github.com/Jfx666/BiltegiberriaBFX3/master/addons.xml</info>
+		<checksum>https://raw.github.com/Jfx666/BiltegiberriaBFX3/master/addons.xml.md5</checksum>
+                <datadir zip="true">https://raw.github.com/Jfx666/BiltegiberriaBFX3/master</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>BassFox Official Repository</summary>
+                <description lang="en">Install Addon Official Bass Fox and other add-ons that are complementary help in support links</description>
+   		<description lang="es">Instala el Addon Oficial BassFox y los otros add-ons que son complementos de ayuda en la reproducción de las listas</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.catoal" name="Catoal repository" version="1.0.0" provider-name="Catoal">
+	<extension point="xbmc.addon.repository" name="Catoal Repository">
+		<info compressed="false">http://raw.github.com/catoalkodi/repository.catoal/master/addons.xml</info>
+		<checksum>http://raw.github.com/catoalkodi/repository.catoal/master/addons.xml.md5</checksum>
+		<datadir zip="true">http://raw.github.com/catoalkodi/repository.catoal/master/repo/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Catoal Addon</summary>
+		<description>Addon Description</description>
+		<disclaimer></disclaimer>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.javi-team" name="Javi-Team Repository" version="1.0.0" provider-name="JAVI-TEAM">
+	<extension point="xbmc.addon.repository" name="JAVI-TEAM Repository">
+            <info compressed="false">https://raw.githubusercontent.com/tauro2425/repository.javiteam/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/tauro2425/repository.javiteam/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/tauro2425/repository.javiteam/master/zips</datadir>
+	</extension>
+    <extension point="xbmc.addon.metadata">
+		<summary>Repositorio de Addons JAVI_-TEAM</summary>
+		<description>Go though the plugins and see what you like</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.pld" name="PLD Addon Repository" version="1.0.0" provider-name="PROYECTOLUZDIGITAL">
+	<extension point="xbmc.addon.repository" name="PLD Addon Repository">
+            <info compressed="false">https://raw.githubusercontent.com/grupopld/repository.pld/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/grupopld/repository.pld/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/grupopld/repository.pld/master/zips</datadir>
+	</extension>
+    <extension point="xbmc.addon.metadata">
+		<summary>Addons related to XBMC </summary>
+		<description>Go though the plugins and see what you like</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+<addon id="repository.shani" name="Shanis Addon Repository" version="2.8" provider-name="Shani">
+	<extension point="xbmc.addon.repository" name="Shanis Addon Repository">
+    <dir>
+            <info compressed="false">https://raw.github.com/Shani-08/ShaniXBMCWork2/master/addons.xml</info>
+            <checksum>https://raw.github.com/Shani-08/ShaniXBMCWork2/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.github.com/Shani-08/ShaniXBMCWork2/master/zips</datadir>
+    </dir>
+
+    <info compressed="false">https://offshoregit.com/Shani-08/main/addons.xml</info>
+    <checksum>https://offshoregit.com/Shani-08/main/addons.xml.md5</checksum>
+    <datadir zip="true">https://offshoregit.com/Shani-08/main/zips</datadir>
+
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>Addons related to XBMC for Zemtv etc</summary>
+		<description>Go though the plugins and see what you like</description>
+		<platform>all</platform>
+	</extension>
+</addon>
+
+    <addon id="repository.ViendoKodiStreaming" name="[COLOR blue]ViendoKodi[/COLOR] [COLOR red]Streaming[/COLOR] Repository" version="0.1.0" provider-name="Viendo Kodi Team">
+        <requires>
+            <import addon="xbmc.addon" version="12.0.0"/>
+        </requires>
+        <extension point="xbmc.addon.repository" name="[COLOR blue]ViendoKodi[/COLOR] [COLOR red]Streaming[/COLOR] Repository">
+            <info compressed="false">https://raw.githubusercontent.com/ViendoKodi/_repo/master/addons.xml</info>
+            <checksum>https://raw.githubusercontent.com/ViendoKodi/_repo/master/addons.xml.md5</checksum>
+            <datadir zip="true">https://raw.githubusercontent.com/ViendoKodi/_repo/master/</datadir>
+            <hashes>false</hashes>
+        </extension>
+        <extension point="xbmc.addon.metadata">
+            <summary>Tv y Cine para Kodi</summary>
+            <description>Permite visualizar los canales de tv ofrecidos por diferentes Webs.[CR] Ademas de peliculas de web de torrent.</description>
+            <platform>all</platform>
+    </extension>
+</addon>
+
+<addon id="repository.xbmchub" name="TVADDONS.ag Addon Repository" version="1.0.6" provider-name="tvaddons.ag">
+	<extension point="xbmc.addon.repository" name="TVADDONS.ag Addon Repository">
+	<dir>
+		<info compressed="false">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml</info>
+		<checksum>https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://offshoregit.com/tvaresolvers/tva-common-repository/raw/master/zips/</datadir>
+	</dir>
+		<info compressed="false">https://offshoregit.com/xbmchub/xbmc-hub-repo/raw/master/addons.xml</info>
+		<checksum>https://offshoregit.com/xbmchub/xbmc-hub-repo/raw/master/addons.xml.md5</checksum>
+		<datadir zip="true">https://offshoregit.com/xbmchub/xbmc-hub-repo/raw/master/</datadir>
+	</extension>
+	<extension point="xbmc.addon.metadata">
+		<summary>The Best Third Party Addons for Kodi, Brought to you by TVADDONS.ag</summary>
+		<description>The Best Third Party Addons for Kodi, Brought to you by TVADDONS.ag</description>
+		<platform>all</platform>
+                <forum>http://forums.tvaddons.ag/forums/113-TVADDONS-AG-ADDON-REPOSITORY</forum>
+                <website>http://www.tvaddons.ag/</website>
+	</extension>
+</addon>
+
+<addon id="script.module.addon.common"
+	     name="Common addon methods"
+	     version="2.0.0"
+	     provider-name="Eldorado (original: t0mm0)">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Collection of commonly used addon routines</summary>
+    <description lang="en">Collection of commonly used addon routines to simplify addon development.</description>
+    <disclaimer lang="en"></disclaimer>
+    <language></language>
+    <platform>all</platform>
+    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
+  </extension>
+</addon>
+
+<addon id="script.module.liveresolver"
+     name="LiveResolver"
+     version="0.1.48"
+     provider-name="natko1412">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.beautifulsoup" version="3.2.1"/>
+    <import addon="script.module.requests"/>
+    <import addon="script.module.addon.common" version="2.0.0" />
+
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Resolve common live video host URL's to be playable in XBMC/Kodi + find links embeded in sites.</summary>
+    <description lang="en"></description>
+  </extension>
+</addon>
+
 <addon id="script.module.m3u8" name="m3u8" version="0.2.2" provider-name="globocom, Timewasted">
 	<requires>
 		<import addon="xbmc.python" version="2.14.0"/>
@@ -144,6 +287,40 @@
 		<source>https://github.com/timewasted/script.module.m3u8</source>
 		<email>ryan@timewasted.me</email>
 	</extension>
+</addon>
+
+<addon id="script.module.urlresolver"
+     name="URLResolver"
+     version="2.10.0"
+     provider-name="Eldorado">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.simplejson" version="3.3.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
+    <description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
+  </extension>
+</addon>
+
+<addon id="script.module.urlresolver"
+     name="URLResolver"
+     version="2.10.0"
+     provider-name="Eldorado">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0" />
+    <import addon="script.module.t0mm0.common" version="2.0.0"/>
+    <import addon="script.module.simplejson" version="3.3.0"/>
+  </requires>
+  <extension point="xbmc.python.module" library="lib" />
+  <extension point="xbmc.addon.metadata">
+    <platform>all</platform>
+    <summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
+    <description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
+  </extension>
 </addon>
 
 <addon id="script.video.F4mProxy"
@@ -164,24 +341,4 @@
     <description lang="en">Use this addon to play F4m v1 and v2 streams</description>
   </extension>
 </addon>
-<addon id="plugin.video.pldplayerm3u" version="2.2.4" name="[COLOR blue]PLD-PLAYER.[COLOR lime]M3U[/COLOR]" provider-name="[COLOR blue]Proyectoluzdigital[/COLOR]">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-        <import addon="script.video.F4mProxy" version="2.2.3"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <summary>[COLOR lime]PLD-PLAYER.M3U [/COLOR]Muchas Gracias Al Creador Del Addons [COLOR red]SHANI [/COLOR] Esto Es Solo Una Modificación)</summary>
-    <description lang="es">[COLOR blue] Reproductor.proyectoluzdigital[COLOR lime] M3U[/COLOR] ofrecido para usted si tiene comentarios o sugerencias para este complemente, no dude en participar en el foro http://proyectoluzdigital.info/[CR]Plugin Modificado Por EL GRUPO PLD</description>
-   <description>
-       .
-	   Disfruten de este contenido totalmente gratis.
-
-    </description>
-    <platform>all</platform>
-  </extension>
-</addon>
-
 </addons>
