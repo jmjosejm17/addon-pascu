@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.pascu4" name="[COLOR purple]Pascu[/COLOR]" version="0.0.9" provider-name="Pascu120">
+<addon id="plugin.video.pascu4" name="[COLOR purple]Pascu[/COLOR]" version="0.1.0" provider-name="Pascu120">
   <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
+     <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="plugin.video.youtube" optional="true"/>		
 	<import addon="plugin.video.SportsDevil" optional="true"/>
 	<import addon="plugin.video.p2p-streams" optional="true"/>
