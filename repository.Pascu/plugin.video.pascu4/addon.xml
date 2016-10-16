@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<addon id="plugin.video.pascu4" name="[COLOR purple]Pascu[/COLOR]" version="0.1.2" provider-name="Pascu120">
+<addon id="plugin.video.pascu4" name="[COLOR purple]Pascu[/COLOR]" version="0.1.3" provider-name="Pascu120">
   <requires>
      <import addon="xbmc.python" version="2.1.0"/>
 	<import addon="plugin.video.youtube" optional="true"/>		
