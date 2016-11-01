@@ -1,6 +1,10 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <<<<<<< HEAD
+<<<<<<< HEAD
 <addon id="plugin.video.pascu4" name="[COLOR purple]Pascu[/COLOR]" version="0.1.4" provider-name="Pascu120">
+=======
+<addon id="plugin.video.pascu4" name="[COLOR purple]Pascu[/COLOR]" version="0.1.2" provider-name="Pascu120">
+>>>>>>> parent of 42ab5d0... 19.1
 =======
 <addon id="plugin.video.pascu4" name="[COLOR purple]Pascu[/COLOR]" version="0.1.2" provider-name="Pascu120">
 >>>>>>> parent of 42ab5d0... 19.1
