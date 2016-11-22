@@ -1,0 +1,5 @@
+﻿
+
+
+Versión 2.0.1
+Primera version del plugin. 
