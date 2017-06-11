@@ -75,34 +75,24 @@
 
 </addon>
 
-<addon id="plugin.video.cinepascu"
-       name="[COLOR yellow]cine pascu[/COLOR]"
-       version="0.0.1"
-       provider-name="pascu">
+<addon id="plugin.video.cine" name="Cine" version="1.0.29" provider-name="Topo">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.t0mm0.common" version="2.0.0"/>
-    <import addon="script.module.beautifulsoup" version="3.2.1"/>
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.beautifulsoup4" />
-    <import addon="script.module.simple.downloader" version="0.9.4"/>
-    <import addon="script.module.requests" />
-    <import addon="script.module.httplib2" />
-    <import addon="script.module.youtube.dl" optional="true"/>
-    <import addon="plugin.video.youtube" version="3.0.0"/>
-    <import addon="script.module.urlresolver" optional="true"/>
-    <import addon="script.module.simplejson" />
-    <import addon="script.common.plugin.cache" version="2.5.2"/>
-    <import addon="script.module.metahandler" version="2.5.1"/>
-
   </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
+  <extension point="xbmc.python.pluginsource" library="addon.py">
     <provides>video</provides>
   </extension>
   <extension point="xbmc.addon.metadata">
-    <summary lang="en">Películas y series pascu</summary>
-    <description lang="en">peliculas online</description>
+    <summary>Cine</summary>
+    <description>Addon de Cine</description>
+    <disclaimer></disclaimer>
+    <language></language>
     <platform>all</platform>
+    <license></license>
+    <forum></forum>
+    <website></website>
+    <email></email>
+    <source></source>
   </extension>
 </addon>
 
@@ -327,28 +317,6 @@ Twitter: twitter.com/xbmctorrent
 Facebook: facebook.com/xbmctorrent
 XBMC HUB: j.mp/xbmctorrent]]></description>
     </extension>
-</addon>
-
-<addon id="plugin.video.yatp"
-  version="3.2.4"
-  name="Yet Another Torrent Player"
-  provider-name="Roman V.M.">
-<requires>
-  <import addon="xbmc.python" version="2.14.0"/>
-  <import addon="script.module.requests" version="2.6.0"/>
-  <import addon="script.module.simpleplugin" version="1.10.0"/>
-  <import addon="script.module.libtorrent" version="1.0.9"/>
-</requires>
-<extension point="xbmc.python.pluginsource" library="main.py">
-  <provides>video</provides>
-</extension>
-<extension point="xbmc.service" library="server.py" start="[login|startup]"/>
-<extension point="xbmc.addon.metadata">
-  <summary lang="en">Yet Another Torrent Player</summary>
-  <description lang="en">A torrent client that allows to play video torrents
-    while downloading them in the background.</description>
-  <platform>all</platform>
-</extension>
 </addon>
 
 <addon id="repository.BassFox-Official" name="BassFox Official Repository" version="1.3.0" provider-name="BassFox">
