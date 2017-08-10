@@ -123,6 +123,26 @@
   </extension>
 </addon>
 
+<addon id="plugin.video.Explora"
+       name="Explora"
+       version="1.1.4"
+       provider-name="Netai">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="plugin.video.f4mTester"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="es">Documentales</summary>
+    <language>es</language>
+    <description lang="es">Todos los documentales en castellano, la videoteca que no deja de crecer ! ... Este addon requiere de plugin f4mTester de shani para funcionar.</description>
+     <platform>all</platform>
+  </extension>
+</addon>
+
 <addon id="plugin.video.f4mTester" version="2.2.6" name="f4mTester" provider-name="Shani">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -136,6 +156,27 @@
         <description></description>
         <platform>all</platform>
     </extension>
+</addon>
+
+<addon id="plugin.video.mundoinfantil"
+       name="[COLOR cornflowerblue]Mundo Infantil[/COLOR]"
+       version="1.0.0"
+       provider-name="j.ruiiz">
+  <requires>
+    <import addon="xbmc.python" version="2.1.0"/>
+    <import addon="script.module.addon.common" version="2.0.0"/>
+    <import addon="plugin.video.youtube" version="5.0.0"/>
+  </requires>
+  <extension point="xbmc.python.pluginsource"
+            library="default.py">
+        <provides>video</provides>
+  </extension>
+  <extension point="xbmc.addon.metadata">
+    <summary lang="es">contenido para ninos</summary>
+    <language>es</language>
+    <description lang="es">.</description>
+     <platform>all</platform>
+  </extension>
 </addon>
 
 <addon id="plugin.video.palantir" name="[COLOR gold]Palantir[/COLOR]" version="0.0.4" provider-name="TierraMedia">
@@ -264,33 +305,6 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.pelisalacarta"
-    name="pelisalacarta"
-    version="4.1.2"
-    provider-name="tvalacarta">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.libtorrent" optional="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="es">Películas y series a la carta</summary>
-    <description lang="es">Películas, series, documentales, anime, ... todo lo que puedas encontrar en Internet ahora desde tu media center. Incluye canales en Español, Italiano e Inglés.</description>
-    <summary lang="en">Movies and TV Shows on demand</summary>
-    <description lang="en">Movies, Series, Documentaries, Anime, ... everything you can find on Internet now on your media center. Includes channels in Spanish, Italian and English.</description>
-    <platform>all</platform>
-    <license>GNU GPL v3</license>
-    <forum>http://www.mimediacenter.info/foro</forum>
-    <website>http://blog.tvalacarta.info/plugin-xbmc/pelisalacarta</website>
-    <email>tvalacarta@gmail.com</email>
-    <source>https://github.com/tvalacarta/pelisalacarta</source>
-  </extension>
-  <extension point="xbmc.service" library="library_service.py" start="login|startup">
-  </extension>
-</addon>
-
 <addon id="plugin.video.pldplayerm3u" version="2.2.4" name="[COLOR blue]PLD-PLAYER.[COLOR lime]M3U[/COLOR]" provider-name="[COLOR blue]Proyectoluzdigital[/COLOR]">
     <requires>
         <import addon="xbmc.python" version="2.1.0"/>
@@ -309,35 +323,6 @@
     </description>
     <platform>all</platform>
   </extension>
-</addon>
-
-<addon id="plugin.video.xbmctorrent" name="XBMCtorrent" version="0.6.10.ru" provider-name="steeve, nightik">
-    <requires>
-        <import addon="xbmc.python" version="2.1.0"/>
-    </requires>
-    <extension point="xbmc.python.pluginsource" library="addon.py">
-        <provides>video</provides>
-    </extension>
-    <extension point="xbmc.addon.repository" name="XBMCtorrent (RU) Autoupdate Repository">
-        <info compressed="false">http://afedchin.github.io/repository/addons.xml</info>
-        <checksum>http://afedchin.github.io/repository/addons.xml.md5</checksum>
-        <datadir zip="true">http://afedchin.github.io/repository/</datadir>
-    </extension>
-    <extension point="xbmc.addon.metadata">
-        <platform>all</platform>
-        <website><![CDATA[http://j.mp/xbmctorrent]]></website>
-        <forum><![CDATA[http://j.mp/xbmctorrent]]></forum>
-        <source><![CDATA[https://github.com/steeve/xbmctorrent]]></source>
-        <language></language>
-        <license><![CDATA[GNU GENERAL PUBLIC LICENSE. Version 3, 29 June 2007]]></license>
-        <summary><![CDATA[XBMCtorrent: Torrent streaming for XBMC.]]></summary>
-        <description><![CDATA[Watch torrents directly from XBMC, without waiting.
-
-To get the latest updates:
-Twitter: twitter.com/xbmctorrent
-Facebook: facebook.com/xbmctorrent
-XBMC HUB: j.mp/xbmctorrent]]></description>
-    </extension>
 </addon>
 
 <addon id="repository.BassFox-Official" name="BassFox Official Repository" version="1.3.0" provider-name="BassFox">
@@ -413,23 +398,6 @@ XBMC HUB: j.mp/xbmctorrent]]></description>
 		<description>Go though the plugins and see what you like</description>
 		<platform>all</platform>
 	</extension>
-</addon>
-
-    <addon id="repository.ViendoKodiStreaming" name="[COLOR blue]ViendoKodi[/COLOR] [COLOR red]Streaming[/COLOR] Repository" version="0.1.0" provider-name="Viendo Kodi Team">
-        <requires>
-            <import addon="xbmc.addon" version="12.0.0"/>
-        </requires>
-        <extension point="xbmc.addon.repository" name="[COLOR blue]ViendoKodi[/COLOR] [COLOR red]Streaming[/COLOR] Repository">
-            <info compressed="false">https://raw.githubusercontent.com/ViendoKodi/_repo/master/addons.xml</info>
-            <checksum>https://raw.githubusercontent.com/ViendoKodi/_repo/master/addons.xml.md5</checksum>
-            <datadir zip="true">https://raw.githubusercontent.com/ViendoKodi/_repo/master/</datadir>
-            <hashes>false</hashes>
-        </extension>
-        <extension point="xbmc.addon.metadata">
-            <summary>Tv y Cine para Kodi</summary>
-            <description>Permite visualizar los canales de tv ofrecidos por diferentes Webs.[CR] Ademas de peliculas de web de torrent.</description>
-            <platform>all</platform>
-    </extension>
 </addon>
 
 <addon id="repository.xbmchub" name="TVADDONS.ag Addon Repository" version="1.0.6" provider-name="tvaddons.ag">
