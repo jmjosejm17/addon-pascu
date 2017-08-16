@@ -158,27 +158,6 @@
     </extension>
 </addon>
 
-<addon id="plugin.video.mundoinfantil"
-       name="[COLOR cornflowerblue]Mundo Infantil[/COLOR]"
-       version="1.0"
-       provider-name="j.ruiz">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.addon.common" version="2.0.0"/>
-    <import addon="plugin.video.youtube" version="5.0.0"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary lang="es">contenido para ninos</summary>
-    <language>es</language>
-    <description lang="es">.</description>
-     <platform>all</platform>
-  </extension>
-</addon>
-
 <addon id="plugin.video.palantir" name="[COLOR gold]Palantir[/COLOR]" version="0.0.4" provider-name="TierraMedia">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -498,7 +477,7 @@
 	</extension>
 </addon>
 
-<addon id="script.module.urlresolver" name="URLResolver" version="3.0.36" provider-name="tvaddons.ag, Eldorado">
+<addon id="script.module.urlresolver" name="URLResolver" version="4.0.00" provider-name="tvaddons">
 	<requires>
 		<import addon="xbmc.python" version="2.1.0" />
 		<import addon="plugin.video.youtube" optional="true" />
@@ -509,8 +488,11 @@
 	<extension point="xbmc.python.pluginsource" library="lib/default.py" />
 	<extension point="xbmc.addon.metadata">
 		<platform>all</platform>
-		<summary lang="en">Resolve common video host URL's to be playable in XBMC/Kodi.</summary>
-		<description lang="en">Resolve common video host URL's to be playable in XBMC/Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
+		<summary lang="en">Resolve common video host URL's to be playable in Kodi.</summary>
+		<description lang="en">Resolve common video host URL's to be playable in Kodi, simplify addon development of video plugins requiring multi video hosts.</description>
+		<platform>all</platform>
+        <forum>https://www.tvaddons.co/forums</forum>
+        <website>https://www.tvaddons.co</website>
 	</extension>
 </addon>
 
