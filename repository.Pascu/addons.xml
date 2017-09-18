@@ -1,80 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <addons>
-<addon id="PLD-Plexus"
-       name="[COLOR red]PLD-ACESTREAM[/COLOR]"
-       version="1.4.1"
-       provider-name="[COLOR blue]GRUPO PLD[/COLOR]">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-    <import addon="script.module.requests" />
-  </requires>
-  <extension point="xbmc.python.pluginsource"
-            library="default.py">
-        <provides>executable</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-    <summary>SopCast and AceStream for Kodi</summary>
-    <description lang="en">[COLOR red]PLD-ACESTREAM[/COLOR][COLOR lime] - Any complex structure containing an intricate network of parts. Plexus brings native peer-to-peer support (AceStream and SopCast) for Kodi Entertainment Center for several platforms.[CR][CR]Documentation: (missing)[/COLOR]</description>
-    <description lang="pt">[COLOR red]PLD-ACESTREAM[/COLOR][COLOR lime] - Uma estrutura complexa constituída por uma rede de partes. O Plexus adiciona suporte peer-to-peer nativo (AceStream e Sopcast) ao Kodi Entertainment Center para várias plataformas.[CR][CR]Documentação: (em falta)[/COLOR]</description>
-    <disclaimer lang="en">The author does not host nor distribute any of the content you may watch using this addon. The author has no part in the development of any included technologies. When seeking help in Kodi's forum please respect rules (http://kodi.wiki/view/Forum_rules).</disclaimer>
-    <disclaimer lang="pt">Os autores não alojam nem distribuem nenhum do conteúdo que poderá ser reproduzido a partir deste addon. Os autores não têm qualquer parte no desenvolvimento de qualquer uma das tecnologias. Se procurar ajuda no fórum oficial do Kodi por favor respeite as regras do fórum (http://kodi.wiki/view/Forum_rules).</disclaimer>
-    <forum>http://forum.kodi.tv/showthread.php?tid=201894</forum>
-    <website>https://code.google.com/p/p2p-strm/</website>
-    <platform>all</platform>
-  </extension>
-</addon>
-
-<addon id="plugin.program.super.favourites" name="Super Favourites" version="1.0.52" provider-name="spoyser">
-  <requires>
-    <import addon="xbmc.python" version="2.14.0"/>
-	<import addon="script.module.metahandler" optional="true" />
-  </requires>
-
-
-  <extension point="xbmc.python.pluginsource" library="default.py">
-        <provides>video audio image executable</provides>
-  </extension>
-
-
-  <extension point="xbmc.service" library="service.py" start="startup" />
-
-
-  <extension point="xbmc.addon.metadata">
-    <summary lang="en">Put all your favourites bits of all your favourites addons into one easy to use addon.</summary>
-    <description lang="en">Super Favourites is a better way of managing your Kodi Favourites.[CR][CR]Virtually any menu item within Kodi can be added to Super Favourites, even from addons that don't normally provide this feature.[CR][CR]Super Favourites allows you to better manage your Kodi favourites, including the creation of sub-folders, into which your Kodi favourites can then be copied or moved into.[CR][CR]This allows you to create you own custom addon with just the best bits of your favourite addons. Search your favourite addons, play your favourite music, read your favourite comic strips, select your favourite playlists, browse your favourite movies, listen to your favourite radio stations, watch your favourite cartoons, the possibilities are endless, all from within one easy to use addon.</description>
-    <platform>all</platform>
-    <language>en</language>
-    <license>GNU GENERAL PUBLIC LICENSE. Version 2, June 1991</license>
-    <forum>http://forum.xbmc.org/showthread.php?tid=192662</forum>
-    <website></website>
-    <source>https://github.com/spoyser/spoyser-repo/tree/master/plugin.program.super.favourites</source>
-    <email>seanpoyser at gmail.com</email>
-  </extension>
-
-
-  <extension point="kodi.context.item">
-    <menu id="kodi.core.main">
-
-      <item library="capture.py">
-        <label>30002</label>
-        <visible>!IsEmpty(Window(10000).Property(SF_STD_CONTEXTMENU_ENABLED)) + !StringCompare(Container.PluginName,plugin.program.super.favourites)</visible>
-      </item>
-
-      <item library="menu_addtofaves.py">
-        <label>30047</label>
-        <visible>!IsEmpty(Window(10000).Property(SF_STD_ADDTOFAVES_ENABLED)) + !StringCompare(Container.PluginName,plugin.program.super.favourites)</visible>
-      </item>
-
-      <item library="menu_download.py">
-        <label>30259</label>
-        <visible>!IsEmpty(Window(10000).Property(SF_STD_DOWNLOAD_ENABLED)) + Player.IsInternetStream</visible>
-      </item>
-
-    </menu>
-  </extension>
-
-</addon>
-
 <addon id="plugin.video.cine" name="Cine" version="1.0.29" provider-name="Topo">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -179,46 +104,6 @@
   </extension>
 </addon>
 
-<addon id="plugin.video.palcotv" name="PalcoTV" version="0.3.6" provider-name="PalcoTV Team">
-  <requires>
-    <import addon="xbmc.python" version="2.1.0"/>
-	<import addon="script.module.addon.common" />
-	<import addon="script.module.requests"/>
-	<import addon="script.common.plugin.cache"/>
-	<import addon="script.module.dateutil"/>
-	<import addon="script.module.t0mm0.common" optional="true"/>
-	<import addon="script.module.beautifulsoup" optional="true"/>
-	<import addon="script.module.mctools" optional="true"/>
-	<import addon="script.module.youtube.dl" optional="true"/>
-	<import addon="plugin.video.youtube" optional="true"/>
-	<import addon="plugin.video.SportsDevil" optional="true"/>
-	<import addon="plugin.video.p2p-streams" optional="true"/>
-	<import addon="program.plexus" optional="true"/>
-    <import addon="script.module.urlresolver" optional="true"/>
-	<import addon="script.module.pyamf" optional="true"/>
-	<import addon="script.module.livesolver" optional="true"/>
-  </requires>
-  <extension point="xbmc.python.pluginsource" library="default.py">
-    <provides>video</provides>
-  </extension>
-  <extension point="xbmc.addon.metadata">
-	<provides>video</provides>
-    <summary lang="en">PalcoTV</summary>
-    <description lang="es">Plataforma de administración de contenidos multimedia en Kodi[CR][CR]Web oficial: [COLOR lightblue]palcotv.net[/COLOR][CR]Foro de soporte: [COLOR lightblue]http://adf.ly/1LZeIk[/COLOR][CR]Manual de uso: [COLOR lightblue]http://adf.ly/10746027/manual-de-uso-palcotv[/COLOR][CR][CR]PalcoTV Team: [I]Reig, Aquilesserr, MadQuark, V1k1ng0, Quequino y Juarrox.[/I]</description>
-    <disclaimer lang="es">[B]Este addon es un mero ejercicio de aprendizaje de programación Python y se distribuye sin contenidos.[/B] Utilízalo bajo tu responsabilidad. Su autor queda eximido de toda responsabilidad si este addon se distribuye con acceso a contenidos protegidos por derechos de autor sin el permiso de sus creadores.</disclaimer>
-	<news>Reproducción de películas de la biblioteca de Kodi a través de PalcoTV abriendo un selector con las opciones de un #multi (linkers, conectores y torrents) de una lista M3U local u online.[CR]Nueva sintaxis para poder crear selector de opciones en el skin XML[CR]Recuperado el soporte de listas PLX con paginación, sinopsis e imágenes (logo/background), podcasts y listas de reproducción de podcasts de iVoox (gracias a V1k1ng0 y Aquilesserr), así como nueva sintaxis para búsqueda de torrents (BUM) definiendo qué número mínimo de semillas debe tener cada resultado a mostrar. Se añade además sintaxis (plx:) para abrir listas PLX desde listas M3U.[CR]Corregidos varios bugs en el ScraperX, además de implementar en el menú contextual una opción para agregar películas a la biblioteca de Kodi enlazando con enlaces #multi de una lista local o en línea. Se añade a la configuración varios campos para establecer lista M3U online, APIs de TVDB/TMDB y definir carpeta que servirá de fuente de medios para la biblioteca de Kodi.[CR]Al reproducir un archivo torrent se abre cuadro de opciones con los add-ons de reproducción de torrents instalados. Se añade soporte para Torrentin, Torrenter y YATP.[CR]Actualización de linkers y conectores multimedia gracias a Aquilesserr. No olvides consultar en el foro el estado actual de cada uno de ellos.[CR]Se eliminan varios scripts requeridos para la ejecución de PalcoTV[CR]Recuperada herramienta de fútbolenlatv.com añadiendo soporte de todas las secciones deportivas: Fútbol, Baloncesto, Balonmano, Ciclismo, Golf, Automovilismo, Motociclismo, Fútbol Sala, Fútbol Americano[CR]Pequeños cambios para adaptarse a Kodi 17 (Krypton)[CR]Pequeñas optimizaciones y bugs corregidos.</news>
-	  <assets>
-		<icon>icon.png</icon>
-		<fanart>fanart.jpg</fanart>
-		<screenshot>art/shot1.png</screenshot>
-		<screenshot>art/shot2.png</screenshot>
-		<screenshot>art/shot3.png</screenshot>
-		<screenshot>art/shot4.png</screenshot>
-	  </assets>
-	<platform>all</platform>
-  </extension>
-</addon>
-
 <addon id="plugin.video.pascu4" name="[COLOR purple]Pascu[/COLOR]" version="0.2.3" provider-name="Pascu120">
   <requires>
     <import addon="xbmc.python" version="2.1.0"/>
@@ -320,16 +205,16 @@
     </extension>
 </addon>
 
-<addon id="repository.BassFox-Official" name="BassFox Official Repo" version="1.3.7" provider-name="BassFox">
+<addon id="repository.BassFox" name="BassFox Official Repo" version="1.3.8" provider-name="BassFox">
 	<extension point="xbmc.addon.repository" name="BassFox official Repo">
-		<info compressed="false">https://raw.githubusercontent.com/Jfx666/BiltegiberriaBFX3/master/addons.xml</info>
-		<checksum>https://raw.githubusercontent.com/Jfx666/BiltegiberriaBFX3/master/addons.xml.md5</checksum>
-                <datadir zip="true">https://raw.githubusercontent.com/Jfx666/BiltegiberriaBFX3/master</datadir>
+		<info compressed="false">https://raw.githubusercontent.com/matubasshunter/bassfox1.3.8/master/addons.xml</info>
+		<checksum>https://raw.githubusercontent.com/matubasshunter/bassfox1.3.8/master/addons.xml.md5</checksum>
+                <datadir zip="true">https://raw.githubusercontent.com/matubasshunter/bassfox1.3.8/master</datadir>
 	</extension>
 	<extension point="xbmc.addon.metadata">
 		<summary>BassFox Official Repository</summary>
-                <description lang="en">Install Addon Official Bass Fox and other add-ons that are complementary help in support links</description>
-   		<description lang="es">Instala el Addon Oficial BassFox y los otros add-ons que son complementos de ayuda en la reproducción de las listas</description>
+                <description lang="en">Installs the Official Addon BassFox and Bassfoxweb (which contains the movies)</description>
+   		<description lang="es">Instala el Addon Oficial BassFox y Bassfoxweb (el cual contiene las peliculas)</description>
 		<disclaimer></disclaimer>
 		<platform>all</platform>
 	</extension>
